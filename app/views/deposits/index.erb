@@ -1,0 +1,8 @@
+<h1>List of Deposits</h1>
+<ol>
+<% @deposits.each do |deposit|%>
+  <li>
+    <a href="/deposits/<%=deposit.id%>"><%=deposit.amount%></a>
+  </li>
+<% end %>
+</ol>

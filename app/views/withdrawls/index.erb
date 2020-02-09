@@ -1,0 +1,8 @@
+<h1>List of withdrawals</h1>
+<ol>
+<% @withdrawals.each do |withdrawal|%>
+  <li>
+    <a href="/withdrawals/<%=withdrawal.id%>"><%=withdrawal.amount%></a>
+  </li>
+<% end %>
+</ol>
